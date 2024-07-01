@@ -24,7 +24,7 @@ const termOptions = {
     fontFamily: 'Consolas,Liberation Mono,Menlo,Courier,monospace',
     theme: {
         foreground: '#d2d2d2',
-        background: '#2b2b2b',
+        background: '#000000',
         cursor: '#adadad',
         black: '#000000',
         red: '#d81e00',
