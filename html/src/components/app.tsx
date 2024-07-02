@@ -20,11 +20,11 @@ const clientOptions = {
     unicodeVersion: '11',
 } as ClientOptions;
 const termOptions = {
-    fontSize: 13,
+    fontSize: 18,
     fontFamily: 'Consolas,Liberation Mono,Menlo,Courier,monospace',
     theme: {
         foreground: '#d2d2d2',
-        background: '#000000',
+        background: '#0D1117',
         cursor: '#adadad',
         black: '#000000',
         red: '#d81e00',
@@ -54,14 +54,22 @@ const flowControl = {
 export class App extends Component {
     render() {
         return (
-            <Terminal
-                id="terminal-container"
-                wsUrl={wsUrl}
-                tokenUrl={tokenUrl}
-                clientOptions={clientOptions}
-                termOptions={termOptions}
-                flowControl={flowControl}
-            />
+            <div>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <img width="350" src="https://github.com/blooroot/elenashell/assets/153166342/01a1816a-6690-46ec-a7ed-236a0f9ef79a"/>
+                </div>
+                <div style={{ display: 'flex', justifyContent: 'center', fontFamily: 'Calibri', fontSize: '13px', alignItems: 'center' }}>
+                    Ask for something in ElenaDB!
+                </div>
+                <Terminal
+                    id="terminal-container"
+                    wsUrl={wsUrl}
+                    tokenUrl={tokenUrl}
+                    clientOptions={clientOptions}
+                    termOptions={termOptions}
+                    flowControl={flowControl}
+                />
+            </div>
         );
     }
 }

@@ -4,15 +4,30 @@ body {
     min-height: 100%;
     margin: 0;
     overflow: hidden;
+    background-color: #EBECFF; // Fondo del contenedor principal
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #terminal-container {
-    width: auto;
-    height: 100%;
+    width: 1280px;
+    height: calc(80vh - 30px);
     margin: 0 auto;
     padding: 0;
+    background-color: #0D1117;
+    border-radius: 20;
+    position: relative;
+    top: 30px;
     .terminal {
         padding: 5px;
-        height: calc(100% - 10px);
+        height: 100%;
+        background-color: #0D1117;
     }
+}
+
+.small-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
 }
